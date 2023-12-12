@@ -1,16 +1,11 @@
+import { Route, Routes } from "react-router-dom";
+import { SideBar } from "./SideBar/SideBar";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
+    <Routes
     >
-      React homework template
-    </div>
+      <Route path="/" element={<SideBar/>}></Route>
+    </Routes>
   );
 };
